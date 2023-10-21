@@ -1,0 +1,26 @@
+header{
+    background-color: black;
+    height: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 40px;
+}
+header a{
+    color: white;
+    text-align: center;
+    padding: 45px;
+    text-decoration: none;
+    font-size: 14pt;
+}
+body{
+    background-color: #faf2e3;
+    background-attachment: fixed;
+    margin: 0;
+    font-size: 14pt;
+}
+section{
+    margin-left: 400px;
+    margin-top: -480px;
+}
+a:hover{
+    color:  #f5d59a;
+}

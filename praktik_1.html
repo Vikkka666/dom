@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+	<link rel="stylesheet" href="praktik_1.css">
+    <script>
+        var prof={
+            surname: 'Михеева',
+            name : 'Татьяна',
+            patronymic: 'Александровна',
+            ocupation: 'Преподаватель специальных дисциплин',
+            degree: 'Высшее',
+            education : 'Московский государственный институт электронной техники (технический университет)',
+            qualification: 'Инженер-программист инфокоммуникационных систем',
+            specialty: 'Программное обеспечение радиоэлектронных систем',
+            discipline: ['Основы алгоритмизации и программирования', 'Компьютерная графика'],
+                category: prompt('Категория преподавателя:', 'Первая'),
+                experience: prompt('Стаж работы:', ' '),
+                email: prompt('E-mail:', 'vishnevskaya@gmail.com'),
+                site: prompt('Персональный сайт:', 'MayaGraphics.ru')
+        };
+    </script>
+</head>
+<body>
+    <header style="text-align: center;">
+        <a href="#">О проекте</a>
+        <a href="#">Курсы</a>
+        <a href="#">Преподаватели</a>
+        <a href="#">Контакты</a>
+    </header>
+    <div class="imgsave">
+        <img src="no-image.jpg" width="350" >   
+    </div>
+    <section class="info">
+        <script>
+            let line = `
+       <h1> ${prof.surname} <br> 
+        ${prof.name} 
+        ${prof.patronymic} </h1>
+        <p><h2> ${prof.ocupation} </h2></p>
+        <hr>
+        <p><h3>Основная информация:</h3>
+            <ul>
+                <li>Уровень образования: ${prof.degree}</li>
+                <li>Образование: ${prof.education}</li>
+                <li>Квалификация: ${prof.qualification}</li>
+                <li>Специализация: ${prof.specialty}</li>
+                <li>Преподаваемые дисциплины:</li>
+                <ul class= "ul">
+                    <li>${prof.discipline[0]}</li>
+                    <li>${prof.discipline[1]}</li>
+                </ul>
+            </ul>
+        </p>
+        <p><h3>Дополнительная информация:</h3>
+            <ul>
+                <li>Категория: ${prof.category}</li>
+                <li>Стаж: ${prof.experience}</li>
+                <li>E-mail: ${prof.email}</li>
+                <li>Персональный сайт: ${prof.site}</li>
+            </ul>
+        </p>
+               `;
+            document.write(line);
+        </script>
+    </section>
+
+</body>
+</html>
